@@ -1,12 +1,6 @@
-version: 0.2
-
 phases:
+  install:
+    commands:
+      - echo "Installing..."
   runtime-versions:
     java: corretto17
-  build:
-    commands:
-      - mvn clean package
-
-artifacts:
-  files:
-    - target/*.jar
